@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма для додавання викладача</title>
+</head>
+<body>
+    <header>
+        <h1>Форма для додавання викладача</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Основна інформація</legend>
+                <section>
+                    <label for="full-name">Повне ім'я:</label>
+                    <input type="text" id="full-name" name="full-name" size="30" required placeholder="Повне ім'я">
+                </section>
+
+                <section>
+                    <label for="gender">Стать:</label>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Чоловіча</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Жіноча</label>
+                </section>
+
+                <section>
+                    <label for="birthdate">Дата народження:</label>
+                    <input type="date" id="birthdate" name="birthdate" required lang="uk">
+                </section>
+            </fieldset>
+
+            <fieldset>
+                <legend>Контактна інформація</legend>
+                <section>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" size="20" required placeholder="examle@gmail.com">
+                </section>
+
+                <section>
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+                </section>
+            </fieldset>
+
+            <fieldset>
+                <legend>Додаткова інформація</legend>
+                <section>
+                    <label for="background-color">Бажаний колір фону:</label>
+                    <input type="color" id="background-color" name="background-color" required>
+                </section>
+
+                <section>
+                    <label for="country">Країна:</label>
+                    <input type="text" id="country" name="country" required placeholder="Країна">
+                </section>
+
+                <section>
+                    <label for="city">Місто:</label>
+                    <input type="text" id="city" name="city" required placeholder="Місто">
+                </section>
+
+                <section>
+                    <label for="comment">Коментар:</label><br>
+                    <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+                </section>
+            </fieldset>
+
+            <button type="submit">Додати</button>
+        </form>
+    </main>
+</body>
+</html>
